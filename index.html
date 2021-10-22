@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+html, body { /* Allow the #wrapper div to stretch 100% in both directions */
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #FFFFFF;
+    overflow:hidden;
+}
+#wrapper { /* necessary because it for some reason doesn't work with the iframe */
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#frame {
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+    </style>
+  </head>
   <body>
-    <iframe src="https://a.treatyguide.com/go/https://discord.com/app" style="border:0px #ffffff none;" name="Discord Proxy" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="100%" width="100%" allowfullscreen></iframe>
+    <h3>Discord Proxy</h3>
+    <div id="wrapper">
+      <iframe id="frame" src="https://a.treatyguide.com/go/https://discord.com/app" name="Discord Proxy Loader" allowfullscreen/>
+    </div>
   </body>
 </html>
