@@ -1,0 +1,11 @@
+{
+    "name": "Discord Proxy",
+    "description": "Fastest proxy using only nginx as the backend server",
+    "repository": "https://github.com/3kh0/discord-proxy",
+    "logo": "",
+    "keywords": [
+        "discord",
+        "proxy"
+    ],
+    "stack": "container"
+}
