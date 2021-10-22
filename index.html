@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Discord | 3kh0</title>
+    
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
 html, body { /* Allow the #wrapper div to stretch 100% in both directions */
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    background-color: #2C2F33;
-    text-color: #FFFFFF;
-    overflow:hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #2C2F33;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+  overflow:hidden;
 }
 #wrapper { /* necessary because it for some reason doesn't work with the iframe */
-    position: absolute;
-    top: 20px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  position: absolute;
+  top: 0px;    
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 #frame {
-    width: 100%;
-    height: 100%;
-    border:0;
+  width: 100%;
+  height: 100%;
+  border:0;
+}
+.center {
+  text-align: center;
 }
 .callout {
   position: fixed;
@@ -32,6 +41,7 @@ html, body { /* Allow the #wrapper div to stretch 100% in both directions */
 .callout-header {
   border-radius: 15px 15px 0px 0px;
   padding: 25px 15px;
+  font-family: 'Roboto', sans-serif;
   background: #2C2F33;
   font-size: 30px;
   color: white;
@@ -40,6 +50,7 @@ html, body { /* Allow the #wrapper div to stretch 100% in both directions */
   padding: 15px;
   border-radius: 0px 0px 15px 15px;
   background-color: #7289DA;
+  font-family: 'Roboto', sans-serif;
   color: #FFFFFF
 }
 .closebtn {
@@ -47,6 +58,7 @@ html, body { /* Allow the #wrapper div to stretch 100% in both directions */
   top: 5px;
   right: 15px;
   color: white;
+  font-family: 'Roboto', sans-serif;
   font-size: 30px;
   cursor: pointer;
 }
@@ -57,18 +69,20 @@ html, body { /* Allow the #wrapper div to stretch 100% in both directions */
   </head>
   <body>
     <h3>Discord Proxy</h3>
+    <h5>Loading...</h5>
+    <h5>Please wait</h5>
     <!--
     <p>Discord is a VoIP, instant messaging and digital distribution platform. Users communicate with voice calls, video calls, text messaging, media and files in private chats or as part of communities called "servers". Servers are a collection of persistent chat rooms and voice chat channels. Discord runs on Windows, macOS, Android, iOS, iPadOS, Linux, and in web browsers. As of 2021, the service has over 350 million registered users and over 150 million monthly active users.</p>
 -->
     <div id="wrapper">
-      <iframe id="frame" src="https://a.treatyguide.com/go/https://discord.com/app" name="Discord Proxy Loader" allowfullscreen/>
-      
-       <div class="callout">
+        <div class="callout">
          <div class="callout-header">Infomation</div>
           <span class="closebtn" onclick="this.parentElement.style.display='none';">x</span>
-        <div class="callout-container">
-         <p>Welcome to Discord! Quick note: Joining a voice channel does not work right now but it will come soon!</p>
+         <div class="callout-container">
+          <p>Welcome to Discord! Quick note: Joining a voice channel does not work right now but it will come soon!</p>
         </div>
+      <iframe id="frame" src="https://a.treatyguide.com/go/https://discord.com/app" name="Discord Proxy Loader" allowfullscreen/>
+      
        </div>
       
     </div>
